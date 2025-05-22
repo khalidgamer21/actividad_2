@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
 public class Usuario {
     private String nombre;
     private String apellido;
@@ -10,4 +13,21 @@ public class Usuario {
         this.genero = genero;
         this.edad = edad;
     }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getGenero() {
+        return genero;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+    public String getApellido() {
+        return apellido;
+    }
+
+
 }

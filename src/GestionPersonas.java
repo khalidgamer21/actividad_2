@@ -24,7 +24,11 @@ public class GestionPersonas {
     }
 
 
+}
 
-
-
+public void mostrar_Nombre_Y_Genero(ArrayList<Usuario> usuarios) {
+    for (Usuario p : usuarios) {
+        System.out.println("Nombre completo: " + p.getNombre() + " " + p.getApellido()
+                + " | Género: " + p.getGenero());
+    }
 }
