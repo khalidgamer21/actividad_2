@@ -40,3 +40,21 @@ public double calcular_Promedio_Edad(ArrayList<Usuario> usuarios) {
     }
     return (double) suma / usuarios.size();
 }
+public int contar_Masculinos(ArrayList<Usuario> usuarios) {
+    int count = 0;
+    for (Usuario p : usuarios) {
+        if (p.getGenero().equalsIgnoreCase("Masculino")) {
+            count++;
+        }
+    }
+    return count;
+}
+public int contar_Femeninos(ArrayList<Usuario> usuarios) {
+    int count = 0;
+    for (Usuario p : usuarios) {
+        if (p.getGenero().equalsIgnoreCase("Femenino")) {
+            count++;
+        }
+    }
+    return count;
+}
