@@ -8,6 +8,16 @@ public class GestionPersonas {
             System.out.print("Nombre: ");
             String nombre = scanner.nextLine();
 
+            System.out.print("Apellido: ");
+            String apellido = scanner.nextLine();
+
+            System.out.print("Género (Masculino/Femenino): ");
+            String genero = scanner.nextLine();
+
+            System.out.print("Edad: ");
+            int edad = Integer.parseInt(scanner.nextLine());
+
+
 
 
         }
