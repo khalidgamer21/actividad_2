@@ -3,4 +3,11 @@ public class Usuario {
     private String apellido;
     private String genero;
     private int edad;
+
+    public Usuario(String nombre, String apellido, String genero, int edad) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.genero = genero;
+        this.edad = edad;
+    }
 }
