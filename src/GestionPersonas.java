@@ -16,8 +16,15 @@ public class GestionPersonas {
 
             System.out.print("Edad: ");
             int edad = Integer.parseInt(scanner.nextLine());
-
-
-
-
+            usuarios.add(new Usuario(nombre, apellido, genero, edad));
+            System.out.println();
         }
+
+        return Usuarios;
+    }
+
+
+
+
+
+}
