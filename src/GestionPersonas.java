@@ -32,3 +32,11 @@ public void mostrar_Nombre_Y_Genero(ArrayList<Usuario> usuarios) {
                 + " | Género: " + p.getGenero());
     }
 }
+
+public double calcular_Promedio_Edad(ArrayList<Usuario> usuarios) {
+    int suma = 0;
+    for (Usuario p : usuarios) {
+        suma += p.getEdad();
+    }
+    return (double) suma / usuarios.size();
+}
