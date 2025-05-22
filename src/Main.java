@@ -8,7 +8,7 @@ public class Main {
 
         ArrayList<Usuario> usuarios = gestion.capturarUsuario(scanner);
 
-        System.out.println("\n--- Datos Capturados ---");
+        System.out.println("\n---- Datos Capturados ----");
         gestion.mostrar_Nombre_Y_Genero(usuarios);
 
         System.out.printf("\nPromedio de edades: %.2f\n", gestion.calcular_Promedio_Edad(usuarios));
