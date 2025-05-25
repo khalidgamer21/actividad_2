@@ -34,12 +34,12 @@ public class Gestion_Persona {
         }
     }
 
-    public double calcular_Promedio_Edad(ArrayList<Usuario> usuarios) {
+    public double calcularPromedioEdad(ArrayList<Persona> personas) {
         int suma = 0;
-        for (Usuario p : usuarios) {
+        for (Persona p : personas) {
             suma += p.getEdad();
         }
-        return (double) suma / usuarios.size();
+        return (double) suma / personas.size();
     }
 
     public int contar_Masculinos(ArrayList<Usuario> usuarios) {
