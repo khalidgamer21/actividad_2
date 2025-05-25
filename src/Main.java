@@ -4,15 +4,15 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Gestion_Usuario gestion = new Gestion_Usuario();
+        Gestion_Persona gestion = new Gestion_Persona();
 
-        ArrayList<Usuario> usuarios = gestion.capturarUsuario(scanner);
+        ArrayList<Persona> personas = gestion.capturarPersonas(scanner);
 
         System.out.println("\n---- Datos Capturados ----");
-        gestion.mostrar_Nombre_Y_Genero(usuarios);
+        gestion.mostrarInformacionPersonas(personas);
 
-        System.out.printf("\nPromedio de edades: %.2f\n", gestion.calcular_Promedio_Edad(usuarios));
-        System.out.println("Cantidad de personas con género Masculino: " + gestion.contar_Masculinos(usuarios));
-        System.out.println("Cantidad de personas con género Femenino: " + gestion.contar_Femeninos(usuarios));
+        System.out.printf("\nPromedio de edades: %.2f\n", gestion.calcularPromedioEdad(personas));
+        System.out.println("Cantidad de personas con género Masculino: " + gestion.contar_Masculinos(personas));
+        System.out.println("Cantidad de personas con género Femenino: " + gestion.contar_Femeninos(personas));
     }
 }
