@@ -42,9 +42,9 @@ public class Gestion_Persona {
         return (double) suma / personas.size();
     }
 
-    public int contar_Masculinos(ArrayList<Usuario> usuarios) {
+    public int contar_Masculinos(ArrayList<Persona> personas) {
         int count = 0;
-        for (Usuario p : usuarios) {
+        for (Persona p : personas) {
             if (p.getGenero().equalsIgnoreCase("Masculino")) {
                 count++;
             }
@@ -52,9 +52,9 @@ public class Gestion_Persona {
         return count;
     }
 
-    public int contar_Femeninos(ArrayList<Usuario> usuarios) {
+    public int contar_Femeninos(ArrayList<Persona> personas) {
         int count = 0;
-        for (Usuario p : usuarios) {
+        for (Persona p : personas) {
             if (p.getGenero().equalsIgnoreCase("Femenino")) {
                 count++;
             }
